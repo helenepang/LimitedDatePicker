@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DatePicker</string>
+
+    <string name="day_format_string">%s日</string>
+    <string name="month_format_string">%s月</string>
+    <string name="lunar_picker">农历</string>
+    <string name="common_picker">公历</string>
+    <string name="back_to_today">Today</string>
+    <string name="date_picker_ok">OK</string>
+
+    <string name="default_string_format_date">%1$s | %2$s</string>
+
+</resources>

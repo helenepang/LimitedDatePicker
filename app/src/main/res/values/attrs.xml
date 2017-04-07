@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--<declare-styleable name="TimeLineView">
+        <attr name="marker_in_center" format="boolean"/>
+        <attr name="marker" format="reference"/>
+        <attr name="line" format="reference"/>
+        <attr name="line_width" format="dimension"/>
+        <attr name="marker_size" format="dimension"/>
+        <attr name="line_orientation" format="integer"/>
+    </declare-styleable>-->
+
+
+
+    <!-- Don't touch this -->
+    <attr name="numberPickerStyle" format="reference" />
+
+    <declare-styleable name="NumberPicker">
+        <!-- @hide If the input text is editable -->
+        <attr name="inputTextEditable" format="boolean"/>
+        <!-- @hide Color for the solid color background if such for optimized rendering. -->
+        <attr name="solidColor" format="color|reference" />
+        <!-- @hide The divider for making the selection area. -->
+        <attr name="selectionDivider" format="reference" />
+        <!-- @hide The height of the selection divider. -->
+        <attr name="selectionDividerHeight" format="dimension" />
+        <!-- @hide The distance between the two selection dividers. -->
+        <attr name="selectionDividersDistance" format="dimension" />
+        <!-- @hide The min height of the NumberPicker. -->
+        <attr name="internalMinHeight" format="dimension" />
+        <!-- @hide The max height of the NumberPicker. -->
+        <attr name="internalMaxHeight" format="dimension" />
+        <!-- @hide The min width of the NumberPicker. -->
+        <attr name="internalMinWidth" format="dimension" />
+        <!-- @hide The max width of the NumberPicker. -->
+        <attr name="internalMaxWidth" format="dimension" />
+        <!-- @hide The layout of the number picker. -->
+        <attr name="internalLayout" format="reference" />
+        <!-- @hide The drawable for pressed virtual (increment/decrement) buttons. -->
+        <attr name="virtualButtonPressedDrawable" format="reference"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="DatePicker">
+        <attr name="calendarMode" format="enum">
+            <enum name="lunarCalendar" value="1"/>
+            <enum name="commonCalendar" value="2"/>
+        </attr>
+        <!--yyyy/MM/dd-->
+        <attr name="minDate" format="string"/>
+        <attr name="maxDate" format="string"/>
+        <!--should contain three number pickers with ids: day, month, year-->
+        <attr name="pickerLayout" format="reference"/>
+    </declare-styleable>
+</resources>

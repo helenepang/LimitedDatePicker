@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="NumberPicker">
+        <item name="android:orientation">vertical</item>
+        <item name="android:fadingEdge">vertical</item>
+        <item name="android:fadingEdgeLength">48dp</item>
+        <item name="solidColor">@android:color/transparent</item>
+        <item name="selectionDivider">@color/grey_f0e6e6</item>
+        <item name="selectionDividerHeight">0.5dip</item>
+        <item name="selectionDividersDistance">48dp</item>
+        <item name="internalLayout">@layout/number_picker_with_selector_wheel</item>
+        <item name="internalMinWidth">180dip</item>
+        <item name="internalMaxHeight">180dip</item>
+        <item name="virtualButtonPressedDrawable">@color/transparent</item>
+        <item name="inputTextEditable">false</item>
+    </style>
+
+    <style name="long_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/grey_f0e6e6</item>
+    </style>
+</resources>

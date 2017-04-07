@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:gravity="center_horizontal"
+    android:minWidth="218dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp">
+
+        <RadioGroup
+            android:id="@+id/calendar_swicher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/common_calendar_switcher"
+                android:layout_width="36dp"
+                android:layout_height="23dp"
+                android:layout_marginLeft="26dp"
+                android:background="@drawable/selector_alpha_red_button"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="@string/common_picker"
+                android:textColor="@color/selector_black_white"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/lunar_calendar_switcher"
+                android:layout_width="36dp"
+                android:layout_height="23dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/selector_alpha_red_button"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/lunar_picker"
+                android:textColor="@color/selector_black_white"
+                android:textSize="12sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/save"
+            android:textColor="#463c3c"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:text="取消"/>
+
+        <TextView
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:textColor="#ff4258"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:text="确认"/>
+
+    </RelativeLayout>
+
+    <View
+        style="@style/long_line"/>
+
+    <com.limit.datepicker.datepicker.DatePicker
+        android:id="@+id/date_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

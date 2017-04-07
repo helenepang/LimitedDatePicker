@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.limit.datepicker.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="120dp"
+        android:textStyle="bold|italic"
+        android:textSize="17sp"
+        android:text=""/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_margin="10dp"
+        android:onClick="onShowDatePicker"
+        android:background="#ccff2d47"
+        android:textColor="#ffffff"
+        android:text="show date picker"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

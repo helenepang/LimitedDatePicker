@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pickers"
+    android:layout_width="fill_parent"
+    android:layout_height="174dp"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:baselineAligned="false"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal">
+        <!-- Year -->
+
+        <com.limit.datepicker.datepicker.simonvt.NumberPicker
+            android:id="@+id/year"
+            style="@style/NumberPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal">
+        <!-- Month -->
+        <com.limit.datepicker.datepicker.simonvt.NumberPicker
+            android:id="@+id/month"
+            style="@style/NumberPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal">
+        <!-- Day -->
+        <com.limit.datepicker.datepicker.simonvt.NumberPicker
+            android:id="@+id/day"
+            style="@style/NumberPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+    </LinearLayout>
+
+</LinearLayout>
